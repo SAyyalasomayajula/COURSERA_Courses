@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exapmle</title>
+</head>
+<body>
+<script type="text/javascript">
+	alert("It's my "+ build_great(5)+"grandmother");
+	function build_great(depth){
+		if (depth>0) {
+			return "great-" +build_great(depth-1);
+		}
+		else return"";
+	}
+</script>
+</body>
+</html>
