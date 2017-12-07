@@ -1,0 +1,15 @@
+*{
+	text-align: center;
+	background-color: red;
+}
+
+img{
+	width: 1500px;
+	height: 500px;
+}
+.name-table
+{
+	position: absolute;
+	text-align: center;
+	border:solid 3px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FormExample</title>
+	<style type="text/css">
+				body {
+		  background: #42dff4;
+		  font: 1em Helvetica;
+		}
+		.main_header{
+			text-align: center;
+			font-size: 2em;
+			font-style: italic;
+			font-family: cursive;
+		}
+		.container {
+		  width: 650px;
+		  margin: 25px auto;
+		  padding: 10px;
+		  background: rgba(255,255,255,.3);
+		  overflow: hidden;
+		  border-radius: 10px;
+		}
+
+		.signup {
+		  float: left;
+		  width: 100%;
+		  padding: 30px 20px;
+		  background-color: white;
+		  text-align: center;
+		  border-radius: 5px 0 0 5px;
+		}
+
+		[type=text] {
+		  display: block;
+		  margin: 0 auto;
+		  width: 80%;
+		  border: 0;
+		  border-bottom: 1px solid rgba(0,0,0,.2);
+		  height: 45px;
+		  line-height: 45px;  
+		  margin-bottom: 10px;
+		  font-size: 1em;
+		  color: rgba(0,0,0,.4);
+		  transition: all ease-in-out 1s;
+		}
+		[type=date] {
+		  display: block;
+		  margin: 0 auto;
+		  width: 80%;
+		  border: 0;
+		  border-bottom: 1px solid rgba(0,0,0,.2);
+		  height: 45px;
+		  line-height: 45px;  
+		  margin-bottom: 10px;
+		  font-size: 1em;
+		  color: rgba(0,0,0,.4);
+		  transition: all ease-in-out 1s;
+		}
+
+		.form_button {
+		  margin-top: 25px;
+		  width: 80%;
+		  border: 0;
+		  background: #3498db;
+		  border-radius: 5px;
+		  height: 50px;
+		  color: white;
+		  font-weight: 400;
+		  font-size: 1em;
+		}
+
+		[type='text']:focus {
+		  outline: none;
+		  border-color: #3498db;
+		}
+	</style>
+</head>
+<body>
+	<header class="main_header">Welcome to the simple login form</header>
+        <div class='container'>
+  			<div class='signup'>
+			     <form>
+			       <input type='text' id="fname" placeholder='First:' onblur="checkfield();" required="" /><span id="message"></span>
+			       <input type='text' onblur="checkfield();" id="lname" placeholder='Last:' required="" /><span id="message"></span>
+			       <input type='text' id="email" placeholder='Email: exmample@example.com' required="" />
+			       <input type='text' id="phone" placeholder='Phone:(___)-___-____' required=""  />
+			       <input type="date" placeholder="DOB" name="dob">
+			       <button class="form_button">NEXT</button>
+			     </form>
+  			</div>
+		</div>
+<!-- 		<script type="text/javascript">
+			function checkfield(){
+				var field1 = document.getElementById('fname').value;
+				var field2 = document.getElementById('lname').value;
+				var regex=/^[A-za-z]$/;
+				if (regex.test(field1) && regex.test(field2)) {
+					document.getElementById('message').innerHTML="Anput Accepted"
+				}
+			}
+		</script> -->
+</body>
+</html>

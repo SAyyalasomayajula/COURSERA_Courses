@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color-Guessing-Game</title>
+</head>
+<body>
+    <script type="text/javascript">
+    colors=["blue", "cyan", "gold", "green", "magenta", "orange", "red", "white", "yellow"];
+var guesses = 0;
+check_guess = function(target,guess){
+    if(colors.indexOf(guess) == -1){
+        alert("I don’t recognize that color!");
+        guesses++;
+        return true;
+    }
+    if(target == guess){
+        document.body.style.backgroundColor = guess;
+        alert("You are right! You took " + guesses + " guesses! \n \n Check the page background!!");
+        return false;
+    }
+}
+do_game = function(){
+    var choice = true;
+    var target = Math.floor(Math.random() * colors.length);
+    console.log(colors[target]);
+    while(choice){
+        var message = "I'am thinking in one of this colours: \n \n"+
+                  "blue, cyan, gold, green, magenta, orange, red, white,"+                   "yellow \n \n"+
+                  "What colour am I thinking of?";
+        var guess = prompt(message,"");
+        choice = check_guess(colors[target],guess);
+    }
+                       
+}
+
+do_game();
+</script> 
+</body>
+</html>

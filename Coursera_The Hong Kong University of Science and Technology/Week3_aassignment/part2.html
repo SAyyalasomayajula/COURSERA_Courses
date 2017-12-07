@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Part2</title>
+	<style type="text/css">
+		*{	margin: 0 0 20 0;	padding: 0;	text-align: center;	}
+		.container{	text-align: center;}
+		h3{	text-decoration: underline;	color: blue;}
+		#Leftside { width: 50%;	float: left; height: 500px; border-right: 3px solid black;}
+		#Rightside { width: 50%x; height: 500px; border-bottom:3px solid black; }
+		img {position:absolute; width:100px; height:100px;}
+	</style>
+</head>
+<body onload="generateFaces()">
+	<main id="main">
+		<div class="conatiner" id="conatiner">
+			<h1>The Face Matching Gaming</h1>
+			<p>Click on the occurrence of the "Excess-Face" on the left side!!</p>
+			<div class="Leftside" id="Leftside"> <h3>Left Side</h3></div>
+			<div class="Rightside" id="Rightside"> <h3>Right Side</h3></div>
+		</div>
+	</main>
+	<script>
+		var numberOfFaces = 5;
+		var theLeftside = document.getElementById("Leftside");
+		function generateFaces() {
+			for (var i = 0; i < numberOfFaces; i++) 
+			{	var top = Math.floor(Math.random()*401);
+				var left = Math.floor(Math.random()*401);
+				var theImg = document.createElement("img");
+				theImg.setAttribute("src","http://home.cse.ust.hk/~rossiter/mooc/matching_game/smile.png");
+				theImg.style.top = top + "px";
+				theImg.style.left = left + "px";
+				theLeftside.appendChild(theImg);
+				LeftsideImages = theLeftside.cloneNode(true);
+				LeftsideImages.removeChild(LeftsideImages.lastChild);
+			}
+		}
+	</script>
+</body>
+</html>

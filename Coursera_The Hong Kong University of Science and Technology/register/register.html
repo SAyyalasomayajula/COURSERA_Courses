@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Register </title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+      <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+      <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <form class="form">
+      <div>
+        <h1 id="register1">Registration Form</h1>
+        <center><p>This Registration Form is to collect a few details for a small survey in which i am getting to know a few preferences of the people.</p></center> 
+      </div>
+      <div id="register">  
+        <label>Applicant Name: </label>
+        <input type="UserName" class="form-control input-style" id="exampleInputUserName" aria-describedby="UserName" placeholder="FirstName  LastName"><br>
+        <label>Email address: </label>
+        <input type="email" class="form-control input-style" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="something@example.com"><br>
+        <label>Gender: </label>
+        <label class="form-check-label"><input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>Male</label>
+        <label class="form-check-label"><input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">Female</label><br>
+        <label>Age: </label>
+        <input type="number" class="form-control input-style" id="exampleInputUserName" aria-describedby="UserAge" placeholder="**">
+      </div><br>
+      <div class="Questionire">
+        <h5>Please answer the following questions based on your preference from the given options.Thank you!</h5>
+        <label>Question: What is the brand of the car you drive, mention the model as well?</label><br>
+        <input type="text" name="answer1" placeholder="Brand-Model-Year"><br>
+        <label>Question: What is your most preferred feature in your car that made you buy it?</label><br>
+        <input type="text" name="answer2"><br>
+        <label>Question: How many hours do you drive a day?</label><br>
+        <label class="form-check-label"><input type="radio" class="form-check-input" name="optionsRadios2" id="optionsRadios1" value="option1" checked>12-18</label>
+        <label class="form-check-label"><input type="radio" class="form-check-input" name="optionsRadios2" id="optionsRadios2" value="option2">19-25</label>
+        <label class="form-check-label"><input type="radio" class="form-check-input" name="optionsRadios2" id="optionsRadios3" value="option3">26-35</label>
+        <label class="form-check-label"><input type="radio" class="form-check-input" name="optionsRadios2" id="optionsRadios4" value="option4">36-50</label>
+        <label class="form-check-label"><input type="radio" class="form-check-input" name="optionsRadios2" id="optionsRadios5" value="option5">>50</label><br>
+        <label>Question: How would you rate the "COMFORT" of your car?</label><br>
+        NOT Comfortable   <label class="form-check-label"><input type="radio" class="form-check-input" name="optionsRadios3" id="optionsRadios1" value="option1" checked>1</label>
+        <label class="form-check-label"><input type="radio" class="form-check-input" name="optionsRadios3" id="optionsRadios2" value="option2">2</label>
+        <label class="form-check-label"><input type="radio" class="form-check-input" name="optionsRadios3" id="optionsRadios3" value="option3">3</label>
+        <label class="form-check-label"><input type="radio" class="form-check-input" name="optionsRadios3" id="optionsRadios4" value="option4">4</label>
+        <label class="form-check-label"><input type="radio" class="form-check-input" name="optionsRadios3" id="optionsRadios5" value="option5">5 </label> MOST Comfortable<br>
+        <label>Question: How well would you refer your car for someone else?</label><br>
+        <input type="text" name="answer5"><br>
+        <label>Question: What changes would like to see in your car that would help in making your drive more comfortable?</label><br>
+        <div id="slidecontainer">Nope<input type="range" min="1" max="100" value="50" class="slider" id="myRange">Definitely</div>
+        <input type="text" name="answer6"><br>
+        <label>Question: Lastly ..What is your dream car! </label><br>
+        <input type="text" name="answer7"><br>
+      </div>
+    </form>
+    <footer>
+      <label>Registeration Form</label>
+    </footer>
+  </body>
+</html>
